@@ -1,6 +1,6 @@
 ## PythonImportExample
 
-This is the example package used in my blogpost [How Imports Work in Python](https://betterprogramming.pub/how-imports-work-in-python-59c2943d87dc?sk=9034d9c99e6b83d93a3c1a37f000f4a7), published in [Better Programming](https://betterprogramming.pub/), one of the top publications on [Medium](medium.com).
+This is the example package used in my blogpost [How Imports Work in Python](https://betterprogramming.pub/how-imports-work-in-python-59c2943d87dc?sk=9034d9c99e6b83d93a3c1a37f000f4a7), published in [Better Programming](https://betterprogramming.pub/), one of the top publications on [Medium](https://medium.com).
 
 The post discusses:
 * what happens when you import a python module
@@ -52,3 +52,5 @@ $ git clone https://github.com/Polaris000/BlogCode.git
 $ cd PythonImportExample
 $ pip install -e .
 ```
+
+You can find me on medium [here](https://polaris000.medium.com).
