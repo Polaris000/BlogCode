@@ -1,0 +1,11 @@
+version: "2.0"
+stories:
+- story: user supplies customer info
+  steps:
+  - intent: greet
+  - action: utter_ask_for_contact_info
+  - intent: supply_contact_info
+    entities:
+    - name
+    - email
+  - action: utter_acknowledge_provided_info
