@@ -1,4 +1,4 @@
-## PythonImportExample
+## Rasa Chatbot
 
 This is the example package used in my blogpost Building a Chatbot.
 
