@@ -21,7 +21,7 @@ class ActionHandleProvidedInfo(Action):
                 'payload': '/goodbye'
             },
             {
-                'title': 'Add More Details',
+                'title': 'Add More Information',
                 'payload': '/supply_contact_info'
             },
         ]
