@@ -1,6 +1,6 @@
-## PythonImportExample
+## Contact Information Chatbot v1
 
-This is the example package used in my blogpost Building a Chatbot.
+This is the example chatbot used in my blogpost Building a Chatbot.
 
 The post discusses:
 * what chatbots are
@@ -8,6 +8,19 @@ The post discusses:
 * Terminology like intents, entities, slots and stories
 * training and testing a chatbot with Rasa.
 
+### The Chatbot
+This example chatbot simply collects a user's contact information. A straightforward conversation, called a happy path, would look something like this:
+```
+👨 : Hey
+
+🤖 : Please provide your contact information
+
+👨 : Sure. My name is John and email is john@email.com
+
+🤖 : thanks John for the info.
+```
+Clearly, this is a very simple bot. And most users won't be so cooperating!
+For a more complex example, where some unexpected cases are properly handled, called sad paths, please checkout [this](../RasaChatbot_v2) example bot.
 
 ### Contents
 This project follows the format of a standard Rasa project. There's a directory called `data` for training data like nlu, stories, and rules.
@@ -39,11 +52,11 @@ $ rasa train --fixed-model-name contact_bot
 ```
 
 ### Chatting with the bot
-To test your bot, pen a new terminal window and start a rasa shell session.
+To test your bot, open a new terminal window and start a rasa shell session.
 ```
 $ rasa shell
 ```
-This will let you chat with your bot in your terminal. But if you want to cleaner UI and a little more info like what intents were identified and what entities were extracted, you can use Rasa X.
+This will let you chat with your bot in your terminal. If you want a more interactive UI and a little more debugging information like what intents were identified and what entities were extracted, you can use Rasa X.
 
 ---
 
