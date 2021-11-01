@@ -16,6 +16,72 @@ This example builds on our v1 chatbot, the code for which you can find [here](..
 - makes use of rules
 - has mutliple stories to handle different scenarios
 
+A few cases that are handled in v2 but weren't in v1:  
+
+**The user isn't willing to provide their information**
+```
+👨 : Hey
+
+🤖 : Please provide your contact information
+
+👨 : don't want to
+
+🤖 : Sorry! You'll have to provide your information to proceed.
+```
+
+**The user provides only partial information**
+```
+👨 : Hey
+
+🤖 : Please provide your contact information
+
+👨 : Sure. The name is John.
+
+🤖 : Thanks. Could you also provide your email?
+```
+**The user provides no information**
+```
+👨 : Hey
+
+🤖 : Please provide your contact information
+
+👨 : Sure.
+
+🤖 : Please provide your contact information
+```
+**The user is shown further actions and chooses to end the conversation**
+```
+👨 : Hey
+
+🤖 : Please provide your contact information
+
+👨 : Sure. Its john. And email is john@email.com
+
+🤖 : Thanks! What would you like to do next?
+    - That's all
+    - Add More Information
+
+👨 : That's all
+
+🤖 : Thanks for your time!
+```
+**The user is shown further actions and chooses to add more information**
+```
+👨 : Hey
+
+🤖 : Please provide your contact information
+
+👨 : Sure. Its john. And email is john@email.com
+
+🤖 : Thanks! What would you like to do next?
+    - That's all
+    - Add More Information
+
+👨 : Add More Information
+
+🤖 : Please provide your contact information
+```
+
 ### Contents
 This project follows the format of a standard Rasa project. There's a directory called `data` for training data like nlu, stories, and rules.
 
