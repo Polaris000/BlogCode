@@ -1,6 +1,6 @@
 ## Contact Information Chatbot v1
 
-This is the example chatbot used in my blogpost Building a Chatbot.
+This is the example chatbot used in my blogpost [Building a Chatbot](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324).
 
 The post discusses:
 * what chatbots are
