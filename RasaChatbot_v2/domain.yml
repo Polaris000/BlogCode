@@ -1,0 +1,47 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- supply_contact_info:
+    use_entities: true
+- deny:
+    use_entities: true
+- goodbye:
+    use_entities: false
+
+
+entities:
+- name
+- email
+slots:
+  name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  email:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+
+responses:
+  utter_ask_contact_info:
+  - text: Hello! Could you please provide your contact information?
+  utter_acknowledge_no_info:
+  - text: Sorry, you'll have to provide your information to proceed.
+  utter_goodbye:
+  - text: Thanks for your time!
+  utter_ask_for_email:
+  - text: Thanks. Could you provide your email as well?
+  utter_ask_for_name:
+  - text: Thanks. Could you provide your name as well?
+
+
+actions:
+- action_handle_provided_info
