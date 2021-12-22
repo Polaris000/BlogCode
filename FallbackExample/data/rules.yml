@@ -1,0 +1,33 @@
+version: "2.0"
+rules:
+- rule: say good bye when the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+# # simple fallback:
+# - rule: Implementation of the simple-Fallback
+#   steps:
+#   - intent: nlu_fallback
+#   - action: action_default_fallback
+
+
+# single stage fallback:
+- rule: Implementation of the Single stage fallback | ask user to choose what they meant
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_ask_affirmation
+
+- rule: Implementation of the Single stage fallback | call default fallback if user is not ok
+  steps:
+  - action: action_default_ask_affirmation
+  - intent: out_of_scope
+  - action: action_default_fallback
+
+
+# # two stage fallback:
+# - rule: Implementation of the Two-Stage-Fallback
+#   steps:
+#   - intent: nlu_fallback
+#   - action: action_two_stage_fallback
+#   - active_loop: action_two_stage_fallback
