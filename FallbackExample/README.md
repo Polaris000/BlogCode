@@ -1,86 +1,71 @@
 ## Failing Gracefuuly
 
-This is the example bot to demonstrate the fallback scenarios provided by Rasa.
+This is the example bot to demonstrate the fallback scenarios provided by Rasa. Its sample code from the post on Fallback Strategies, which can be found on [Medium.com](https://towardsdatascience.com/handling-chatbot-failure-gracefully-466f0fb1dcc5).
 
-<!-- The presentation discussed the basics of Rasa, starting from what a chatbot is, all the way to building one with Rasa.
+It builds upon our existing example, which can be found [here](../RasaChatbot_v2).
 
-This example builds on our v1 chatbot, the code for which you can find [here](../RasaChatbot).
 
-### Improvements over Chatbot v1
-- handles the sad path where the user may not want to provide information
-- handles the case where the user may provide on partial information, like only their name or only their email
-- provides the user with further actions once a valid name and email are supplied
-    - the user can choose to end the conversation by choosing the "That's all" option
-    - the user can provide another set of name and email by choosing the "Add More Information" option.
-- makes use of custom actions
-- makes use of rules
-- has mutliple stories to handle different scenarios
 
-A few cases that are handled in v2 but weren't in v1:  
+### Improvements over Chatbot v2
+- addition of fallback mechanisms
+- addition of simple, single stage and two stage fallback mechanisms
+- support for asking the user to rephrase themselves
+- support for asking the user to select from some suggestions
 
-**The user isn't willing to provide their information**
+A few examples:
+
+**Simple Fallback**
 ```
-👨 : Hey
+👨 : !@#?*& (something the bot doesn't understand)
 
-🤖 : Please provide your contact information
+🤖 : Sorry! Let me connect you to a human...
 
-👨 : don't want to
-
-🤖 : Sorry! You'll have to provide your information to proceed.
 ```
 
-**The user provides only partial information**
+**Single-Stage Fallback**
 ```
-👨 : Hey
+👨 : !@#?*& (something the bot doesn't understand)
 
-🤖 : Please provide your contact information
+🤖 : Sorry! What do you want to do?
+    (a) Supply Contact information
+    (b) Agree
+    (c) Disagree
+    (d) End the converation
+    (e) None of these
 
-👨 : Sure. The name is John.
+👨 : (e) None of these (button click)
 
-🤖 : Thanks. Could you also provide your email?
+🤖 : Sorry! Let me connect you to a human...
 ```
-**The user provides no information**
+**Two-stage fallback**
 ```
-👨 : Hey
+👨 : !@#?*& (something the bot doesn't understand)
 
-🤖 : Please provide your contact information
+🤖 : Sorry! What do you want to do?
+    (a) Supply Contact information
+    (b) Agree
+    (c) Disagree
+    (d) End the converation
+    (e) None of these
 
-👨 : Sure.
+👨 : (e) None of these (button click)
 
-🤖 : Please provide your contact information
+🤖 : I'm sorry, I didn't quite understand that. Could you rephrase?
+
+👨 : !@#?*& (again, something the bot doesn't understand)
+
+🤖 : Sorry! What do you want to do?
+    (a) Supply Contact information
+    (b) Agree
+    (c) Disagree
+    (d) End the converation
+    (e) None of these
+
+👨 : (e) None of these (button click)
+
+🤖 : Sorry! Let me connect you to a human...
 ```
-**The user is shown further actions and chooses to end the conversation**
-```
-👨 : Hey
 
-🤖 : Please provide your contact information
-
-👨 : Sure. Its john. And email is john@email.com
-
-🤖 : Thanks! What would you like to do next?
-    - That's all
-    - Add More Information
-
-👨 : That's all
-
-🤖 : Thanks for your time!
-```
-**The user is shown further actions and chooses to add more information**
-```
-👨 : Hey
-
-🤖 : Please provide your contact information
-
-👨 : Sure. Its john. And email is john@email.com
-
-🤖 : Thanks! What would you like to do next?
-    - That's all
-    - Add More Information
-
-👨 : Add More Information
-
-🤖 : Please provide your contact information
-```
 
 ### Contents
 This project follows the format of a standard Rasa project. There's a directory called `data` for training data like nlu, stories, and rules.
@@ -90,6 +75,8 @@ There's a directory called `actions`, which contains all your custom actions.
 You'll also find the `domain.yml` file, which mentions all your intents, entities, slots, responses and actions.
 
 Finally, there's the `config.yml` file, which specifies the components your bot is comprised of.
+
+The config file has a modification compared to the previous versions of this bot: low training epochs for the `DIETClassifier`. This is to simulate fallback behaviour. If you want to build a properly functioning bot, increase epochs to about 100.
 
 ### Usage
 1. Clone this repo
@@ -118,6 +105,11 @@ $ rasa shell
 ```
 This will let you chat with your bot in your terminal. If you want a more interactive UI and a little more debugging information like what intents were identified and what entities were extracted, you can use Rasa X.
 
+### Testing the various fallback strategies
+To test the different fallback strategies, simply comment out the rules for all except for the one you want to test. These rules are located along with the regular rules in `rules.yml`.
+
+After this, retrain the bot to test the strategy. Be sure to keep the epochs for your `DIETClassifier` low (below 5), to simulate nlu_fallback reliably.
+
 ---
 
-You can find me on medium [here](https://polaris000.medium.com). -->
+You can find me on medium [here](https://polaris000.medium.com).
