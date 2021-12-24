@@ -1,0 +1,11 @@
+__pycache__/
+*.cpython*
+
+.Python
+wheels/
+*.egg-info/
+*.egg
+share/python-wheels/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
