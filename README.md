@@ -4,7 +4,7 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 
 | Link to the article on Medium  | Sample Code | Publish Date | Topics |
 | ------------- | ------------- | ------------ | ------------ |
-| 🆕 [Handling Chatbot Failure Gracefully](https://towardsdatascience.com/handling-chatbot-failure-gracefully-466f0fb1dcc5) | [Code](./FallbackExample) | December, 2021| rasa, python, chatbot, nlu |
+| ![](https://img.shields.io/badge/NEW-success/?style=flat-square) [Handling Chatbot Failure Gracefully](https://towardsdatascience.com/handling-chatbot-failure-gracefully-466f0fb1dcc5) | [Code](./FallbackExample) | December, 2021| rasa, python, chatbot, nlu |
 | [Evaluating Multi-label Classifiers](https://towardsdatascience.com/evaluating-multi-label-classifiers-a31be83da6ea) | [Code](./MetricsMultilabel) | November, 2021| classification, sklearn, ml, metrics |
 | [Rasa Chatbot v2 (not a post)](https://github.com/Polaris000/ContactBot)| [Code](https://github.com/Polaris000/ContactBot) | October, 2021| rasa, python, chatbot, nlu |
 | [Building a Chatbot with Rasa](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324)  | [Code](./RasaChatbot) | September, 2021| rasa, python, chatbot, nlu |
