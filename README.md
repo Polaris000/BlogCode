@@ -1,4 +1,4 @@
-# Code Examples from my blog posts
+# Code Samples from my blog posts
 
 This is a repository of code samples from my blogposts. I'm writing on Medium at the moment. You can find me [here](https://polaris000.medium.com).
 
