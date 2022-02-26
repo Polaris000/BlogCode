@@ -1,0 +1,49 @@
+version: "2.0"
+stories:
+- story: user gives info
+  steps:
+    - intent: greet
+    - action: utter_ask_contact_info
+    - intent: supply_contact_info
+      entities:
+        - name
+        - email
+    - action: action_handle_provided_info
+
+- story: user gives only name
+  steps:
+    - intent: supply_contact_info
+      entities:
+        - name
+    - action: utter_ask_for_email
+    - intent: supply_contact_info
+      entities:
+        - email
+    - action: action_handle_provided_info
+
+- story: user gives only email
+  steps:
+    - intent: supply_contact_info
+      entities:
+        - email
+    - action: utter_ask_for_name
+    - intent: supply_contact_info
+      entities:
+        - name
+    - action: action_handle_provided_info
+
+- story: user wants to give info
+  steps:
+    - intent: supply_contact_info
+    - action: utter_ask_contact_info
+    - intent: supply_contact_info
+      entities:
+        - name
+        - email
+    - action: action_handle_provided_info
+
+- story: user doesn't want to provide information
+  steps:
+    - action: utter_ask_contact_info
+    - intent: deny
+    - action: utter_acknowledge_no_info

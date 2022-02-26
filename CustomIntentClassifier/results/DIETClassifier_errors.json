@@ -1,0 +1,137 @@
+[
+  {
+    "text": "My name is John. email's john@email.com",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "John",
+        "entity": "name"
+      },
+      {
+        "start": 25,
+        "end": 39,
+        "value": "john@email.com",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 25,
+        "end": 39,
+        "confidence_entity": 0.5752821564674377,
+        "value": "john@email.com",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "name: David email: david@email.com",
+    "entities": [
+      {
+        "start": 6,
+        "end": 11,
+        "value": "David",
+        "entity": "name"
+      },
+      {
+        "start": 19,
+        "end": 34,
+        "value": "david@email.com",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 19,
+        "end": 34,
+        "confidence_entity": 0.6900637745857239,
+        "value": "david@email.com",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yeah sure. I'm Barbara. My email is barbara@email.com",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "Barbara",
+        "entity": "name"
+      },
+      {
+        "start": 36,
+        "end": 53,
+        "value": "barbara@email.com",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 36,
+        "end": 53,
+        "confidence_entity": 0.7610899806022644,
+        "value": "barbara@email.com",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Susan, susan@email.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Susan",
+        "entity": "name"
+      },
+      {
+        "start": 7,
+        "end": 22,
+        "value": "susan@email.com",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 7,
+        "end": 22,
+        "confidence_entity": 0.6263787150382996,
+        "value": "susan@email.com",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sure. It's Fred. My email is fred@email.com.",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "Fred",
+        "entity": "name"
+      },
+      {
+        "start": 29,
+        "end": 43,
+        "value": "fred@email.com",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 29,
+        "end": 43,
+        "confidence_entity": 0.5645446181297302,
+        "value": "fred@email.com",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

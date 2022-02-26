@@ -1,0 +1,36 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+
+- intent: deny
+  examples: |
+    - no
+    - don't want to
+    - not interested
+    - not now
+
+- intent: supply_contact_info
+  examples: |
+    - My name is [John](name). email's [john@email.com](email)
+    - name: [David](name) email: [david@email.com](email)
+    - Yeah sure. I'm [Barbara](name). My email is [barbara@email.com](email)
+    - [Susan](name), [susan@email.com](email)
+    - Sure. It's [Fred](name). My email is [fred@email.com](email).
+    - want to give my contact info
+    - give contact info
+    - give other info
+    - want to provide contact info
+    - Can I provide some contact information?
+    - need to provide some contact information
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - thanks that's all
+    - nothing else
+    - see you
