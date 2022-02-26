@@ -2,6 +2,19 @@
 
 This is a repository of code samples from my blogposts. I'm writing on Medium at the moment. You can find me [here](https://polaris000.medium.com).
 
+### Usage
+-  Fork this repo
+-  Clone it
+  ```
+  https://github.com/Polaris000/BlogCode.git
+  ```
+- Create an environment with [TODO] `requirements.txt`
+- Navigate to a project
+- Check the README inside each project for information specific to it.
+
+
+### Articles
+
 | Link to the article on Medium  | Sample Code | Publish Date | Topics |
 | ------------- | ------------- | ------------ | ------------ |
 | ![](https://img.shields.io/badge/NEW-success/?style=flat-square) [How do Chatbots Understand?]() | [Code](./CustomIntentClassifier) | February, 2021| rasa, python, chatbot, nlu |
