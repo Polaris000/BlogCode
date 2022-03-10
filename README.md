@@ -3,6 +3,7 @@
 
 This is a repository of code samples from my blogposts. I'm writing on Medium at the moment. You can find me [here](https://polaris000.medium.com).
 
+---
 ### Usage
 -  Fork this repo
 -  Clone it
@@ -13,7 +14,7 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 - Navigate to a project
 - Check the README inside each project for information specific to it.
 
-
+---
 ### Articles
 
 | Link to the article on Medium  | Sample Code | Publish Date | Topics |
