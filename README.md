@@ -1,4 +1,5 @@
 # Code Samples from my blog posts
+![Untitled 51](https://user-images.githubusercontent.com/31214064/157730857-85924761-96fe-4314-b667-aead3222f369.png)
 
 This is a repository of code samples from my blogposts. I'm writing on Medium at the moment. You can find me [here](https://polaris000.medium.com).
 
