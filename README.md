@@ -15,7 +15,7 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 - Check the README inside each project for information specific to it.
 
 ---
-### Managing environments and dependenciies
+### Managing environments and dependencies
 - Creating an environment is straightforward. Though there are a few ways to do it, conda is a reliable way to do it. Install conda from [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 - To create an environment run:
   ```
