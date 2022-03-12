@@ -13,7 +13,8 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 | [Python: Decorators in OOP](https://towardsdatascience.com/python-decorators-in-oop-3189c526ead6)  | TBA | January, 2021| python, oop, decorators |
 | [How Neural Networks Solve the XOR Problem](https://towardsdatascience.com/how-neural-networks-solve-the-xor-problem-59763136bdd7)  | [Code](./XOR_Perceptron) | November, 2020| python, jupyter-notebook, matplotlib |
 | [Understanding Dynamic Programming](https://towardsdatascience.com/understanding-dynamic-programming-75238de0db0d)  | TBA | October, 2020| python, algorithms, dynamic programming |
-| [Understanding Maximum Likelihood Estimation](https://polaris000.medium.com/understanding-maximum-likelihood-estimation-e63dff65e5b1)  | TBA | January, 2020| statistics |
+| [Understanding Maximum Likelihood Estimation](https://polaris000.medium.com/understanding-maximum-likelihood-estimation-e63dff65e5b1)  | TBA | August, 2020| statistics |
+| [Visualizing the Defective Chessboard Problem](https://polaris000.medium.com/visualizing-the-defective-chessboard-problem-aa5fc38b6e5e)  | [Code](./DefectiveChessBoard/) | Jan, 2020| algorithms |
 
 
 
