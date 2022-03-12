@@ -10,10 +10,49 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
   ```
   https://github.com/Polaris000/BlogCode.git
   ```
-- Create an environment with [TODO] `requirements.txt`
+- Create an environment with the required packages installed. (**More info below**)
 - Navigate to a project
 - Check the README inside each project for information specific to it.
 
+---
+### Managing environments and dependenciies
+- Creating an environment is straightforward. Though there are a few ways to do it, conda is a reliable way to do it. Install conda from [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
+- To create an environment run:
+  ```
+  $ conda create --name <env_name> python=3.8.10
+  ```
+- After the setup is complete, activate the env.
+  ```
+  $ conda activate <env_name>
+  ```
+
+- The packages required to run these code samples are mainly of two kinds:
+  - Rasa dependencies
+  - Python data visualization and machine learning libraries
+
+- If you want to install both, use `requirements/requirements.txt` in your env
+  ```
+  (env)$ pip install -r requirements/requirements.txt
+  ```
+- If you want to install rasa dependencies, use `requirements/rasa_requirements.txt` in your env
+  ```
+  (env)$ pip install -r requirements/rasa_requirements.txt
+  ```
+- If you want to install python machine learning dependencies only, use `requirements/non_rasa_requirements.txt` in your env
+  ```
+  (env)$ pip install -r requirements/non_rasa_requirements.txt
+  ```
+
+#### Notes
+- If you're interested in using [Rasa X](https://rasa.com/docs/rasa-x/) for a more visual experience while improving and conversing with your bot, you'll require these additional steps:
+  - Downgrade pip to fix a circular dependency issue
+    ```
+    $ pip install pip==20.2
+    ```
+  - Install rasa x
+    ```
+    $ pip install install rasa-x==0.38.1 --extra-index-url https://pypi.rasa.com/simple
+    ```
 ---
 ### Articles
 
