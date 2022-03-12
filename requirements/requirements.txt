@@ -119,7 +119,6 @@ pyzmq==22.2.1
 questionary==1.4.0
 rasa==2.6.0
 rasa-sdk==2.7.0
-rasa-x==0.38.1
 redis==3.5.3
 regex==2020.9.27
 requests==2.25.1
