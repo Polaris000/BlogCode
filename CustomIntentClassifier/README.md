@@ -1,6 +1,6 @@
-## Failing Gracefuuly
+## Custom Intent Classifier
 
-This is the example bot to demonstrate Rasa's support for custom components--specifically, custom intent classifiers.. Its sample code from the post "How do Chatbots Understand?", which can be found on [Medium.com]().
+This is the example bot to demonstrate Rasa's support for custom components--specifically, custom intent classifiers.. Its sample code from the post "How do Chatbots Understand?", which can be found on [Medium.com](https://towardsdatascience.com/how-do-chatbots-understand-87227f9f96a7).
 
 It builds upon our existing example, which can be found [here](../RasaChatbot_v2).
 
