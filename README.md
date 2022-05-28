@@ -22,6 +22,15 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 | [Visualizing the Defective Chessboard Problem](https://polaris000.medium.com/visualizing-the-defective-chessboard-problem-aa5fc38b6e5e)  | [Code](./DefectiveChessBoard/) | Jan, 2020| algorithms |
 
 ---
+### Star History Chart
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Polaris000/BlogCode&type=Date)](https://star-history.com/#Polaris000/BlogCode&Date)
+
+Checkout [star-history.com](star-history.com) to get a star plot like the one above.
+
+Also, if you found this repository useful, please do leave a star!
+
+---
 ### Usage
 -  Fork this repo
 -  Clone it
