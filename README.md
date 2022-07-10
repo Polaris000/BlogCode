@@ -17,7 +17,7 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 | [How Imports Work in Python](https://betterprogramming.pub/how-imports-work-in-python-59c2943d87dc?sk=9034d9c99e6b83d93a3c1a37f000f4a7)  | [Code](./PythonImportExample)  | June, 2021| python, imports |
 | [Python: Decorators in OOP](https://towardsdatascience.com/python-decorators-in-oop-3189c526ead6)  | TBA | January, 2021| python, oop, decorators |
 | [How Neural Networks Solve the XOR Problem](https://towardsdatascience.com/how-neural-networks-solve-the-xor-problem-59763136bdd7)  | [Code](./XOR_Perceptron) | November, 2020| python, jupyter-notebook, matplotlib |
-| [Understanding Dynamic Programming](https://towardsdatascience.com/understanding-dynamic-programming-75238de0db0d)  | TBA | October, 2020| python, algorithms, dynamic programming |
+| [Understanding Dynamic Programming](https://towardsdatascience.com/understanding-dynamic-programming-75238de0db0d)  | [Code](./DynamicProgramming) | October, 2020| python, algorithms, dynamic programming |
 | [Understanding Maximum Likelihood Estimation](https://polaris000.medium.com/understanding-maximum-likelihood-estimation-e63dff65e5b1)  | TBA | August, 2020| statistics |
 | [Visualizing the Defective Chessboard Problem](https://polaris000.medium.com/visualizing-the-defective-chessboard-problem-aa5fc38b6e5e)  | [Code](./DefectiveChessBoard/) | Jan, 2020| algorithms |
 
@@ -26,7 +26,7 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Polaris000/BlogCode&type=Date)](https://star-history.com/#Polaris000/BlogCode&Date)
 
-Checkout [star-history.com](star-history.com) to get a star plot like the one above.
+Checkout [star-history.com](https://star-history.com) to get a star plot like the one above.
 
 Also, if you found this repository useful, please do leave a star!
 
