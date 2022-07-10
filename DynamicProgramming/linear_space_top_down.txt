@@ -1,0 +1,24 @@
+f_rec(array, start, dp)
+    // base case: return 0 for invalid bounds
+    if start >= size(array)
+        return 0
+
+    // base case: return pre-computed value
+    if dp[start] != 0
+        return dp[n]
+        
+    // populating dp[start]    
+    dp[start] := max(array[start] + f_rec(array, start + 2),
+                f_rec(array, start + 1))
+                
+    return dp[start]
+    
+    
+f(array)
+    n := size(array)
+    dp := array of size n with each element initialized to 0
+    
+    // populating the last element of array dp based on our base case.
+    dp[n-1] := array[n-1];
+    
+    return f_rec(array, 0, dp);

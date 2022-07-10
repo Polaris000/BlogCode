@@ -1,0 +1,20 @@
+f(array)
+    n := array size
+    // create an array of size n + 1
+    dp := an array of size n + 1
+
+    // our base cases:
+    // last element sum is equal to last element
+    dp[n - 1] := array[n-1]
+    
+    // invalid bounds return 0
+    dp[n] := 0
+
+    // loop over array dp from the end, populating it
+    for(i = n-2 -> 0)
+        dp[i] := max(array[i] + dp[i + 2],
+                dp[i + 1])
+
+    // return the first element of dp
+    // which has our answer
+    return dp[0]

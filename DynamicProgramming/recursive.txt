@@ -1,0 +1,14 @@
+f(array, start)
+    
+    // base case: return 0 for invalid bounds
+    if start >= size(array)
+        return 0
+
+    // base case: return last element if start is the index
+    // of the last element
+    if start == size(array) - 1
+        return array[start]
+    
+    // recurrence relation
+    return max(array[start] + f(array, start + 2),
+             f(array, start + 1))
