@@ -1,6 +1,6 @@
 ## NumpyOptimization
 
-This is the example code used in my blogpost [Improving the performance of NumPy code](https://polaris000.medium.com/improving-the-performance-of-numpy-code-d8a339a484d9), published on [Medium](https://medium.com).
+This is the example code used in my blogpost [Improving the performance of NumPy code](https://betterprogramming.pub/improving-the-performance-of-numpy-code-d8a339a484d9).
 
 The blog post discusses experiments on optimizing numpy code.
 
