@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/akarajgi/Documents/BlogCode/MLFlowDemo/mlruns/1/5e3c509e959b49ebaf88f0f57e041b90/artifacts
+end_time: 1664645125120
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 5e3c509e959b49ebaf88f0f57e041b90
+run_uuid: 5e3c509e959b49ebaf88f0f57e041b90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1664645125105
+status: 3
+tags: []
+user_id: akarajgi

@@ -1,0 +1,6 @@
+artifact_location: file:///Users/akarajgi/Documents/BlogCode/MLFlowDemo/mlruns/1
+creation_time: 1664645124990
+experiment_id: '1'
+last_update_time: 1664645124990
+lifecycle_stage: active
+name: DemoExperiment
