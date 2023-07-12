@@ -1,6 +1,6 @@
 ## Pandas: apply, map or transform?
 
-This is the example code used in my blogpost [Pandas: apply, map or transform?]().
+This is the example code used in my blogpost [Pandas: apply, map or transform?](https://towardsdatascience.com/pandas-apply-map-or-transform-dd931659e9cf).
 
 The blog post discusses Pandas' functions and the scenarios in which are meant to be used.
 
