@@ -5,10 +5,10 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 
 ---
 ### Articles
-| Link to the article on Medium  | Sample Code | Publish Date | Topics |
+| Link to the article  | Code | Publish Date | Topics |
 | ------------- | ------------- | ------------ | ------------ |
-| [Understanding the t-statistic]() | [Code](./TStat) | January, 2026 | statistics, hypothesis-testing, python |
-| [Jacobian Adjustment in Probabilistic Models](https://towardsdatascience.com/keeping-probabilities-honest-the-jacobian-adjustment/) | [Code](./JacobianAdjustment) | December, 2025 | bayesian, probabilistic-modeling, jacobian |
+| [A Case for the T-statistic]() | [Code](./TStat) <a target="_blank" href="https://colab.research.google.com/github/Polaris000/BlogCode/blob/main/TStat/t_stat.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> | January, 2026 | statistics, hypothesis-testing, python |
+| [Jacobian Adjustment in Probabilistic Models](https://towardsdatascience.com/keeping-probabilities-honest-the-jacobian-adjustment/) | [Code](./JacobianAdjustment) <a target="_blank" href="https://colab.research.google.com/github/Polaris000/BlogCode/blob/main/JacobianAdjustment/jacobian_adj_simulation.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>| December, 2025 | bayesian, probabilistic-modeling, jacobian |
 |[Pandas: apply, map or transform?](https://towardsdatascience.com/pandas-apply-map-or-transform-dd931659e9cf) | [Code](./PandasApply/)| January, 2023| jupyter-notebook, pandas, python|
 |[Improving the performance of NumPy code](https://betterprogramming.pub/improving-the-performance-of-numpy-code-d8a339a484d9) | [Code](./NumpyOptimization/)| October, 2022| jupyter-notebook, numpy, pandas, matplotlib, numba|
 | [Dissecting the Birthday Paradox](https://towardsdatascience.com/dissecting-the-birthday-paradox-c26754aff6b5) | [Code](./BirthdayParadox)| April, 2022| jupyter-notebook, statistics, pandas, matplotlib|
