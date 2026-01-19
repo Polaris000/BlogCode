@@ -5,10 +5,11 @@ This is a repository of code samples from my blogposts. I'm writing on Medium at
 
 ---
 ### Articles
-
 | Link to the article on Medium  | Sample Code | Publish Date | Topics |
 | ------------- | ------------- | ------------ | ------------ |
-| ![](https://img.shields.io/badge/NEW-success/?style=flat-square) [Pandas: apply, map or transform?](https://towardsdatascience.com/pandas-apply-map-or-transform-dd931659e9cf) | [Code](./PandasApply/)| January, 2023| jupyter-notebook, pandas, python|
+| [Understanding the t-statistic]() | [Code](./TStat) | January, 2026 | statistics, hypothesis-testing, python |
+| [Jacobian Adjustment in Probabilistic Models](https://towardsdatascience.com/keeping-probabilities-honest-the-jacobian-adjustment/) | [Code](./JacobianAdjustment) | December, 2025 | bayesian, probabilistic-modeling, jacobian |
+|[Pandas: apply, map or transform?](https://towardsdatascience.com/pandas-apply-map-or-transform-dd931659e9cf) | [Code](./PandasApply/)| January, 2023| jupyter-notebook, pandas, python|
 |[Improving the performance of NumPy code](https://betterprogramming.pub/improving-the-performance-of-numpy-code-d8a339a484d9) | [Code](./NumpyOptimization/)| October, 2022| jupyter-notebook, numpy, pandas, matplotlib, numba|
 | [Dissecting the Birthday Paradox](https://towardsdatascience.com/dissecting-the-birthday-paradox-c26754aff6b5) | [Code](./BirthdayParadox)| April, 2022| jupyter-notebook, statistics, pandas, matplotlib|
 | [How do Chatbots Understand?](https://towardsdatascience.com/how-do-chatbots-understand-87227f9f96a7) | [Code](./CustomIntentClassifier) | February, 2022| rasa, python, chatbot, nlu |
